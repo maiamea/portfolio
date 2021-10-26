@@ -1,6 +1,7 @@
 module.exports = {
+  pathPrefix: `/portfolio`,
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://maiamea.github.io/portfolio/",
     title: "maiamea's portfolio",
   },
   plugins: [
