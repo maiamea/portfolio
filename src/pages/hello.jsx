@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import ExampleComponent from '../components/ExampleComponent';
 
 const HelloPage = () => {
     return (
@@ -11,29 +12,6 @@ const HelloPage = () => {
             <ExampleComponent initialCount={50}></ExampleComponent>
             {/* ExampleComponent({ initialCount: 100}) */}
         </main>
-    )
-}
-
-function ExampleComponent({initialCount}) {
-    // console.log({props});
-    // const initialCount = props.initialCount;
-    const [count, setCount] = useState(initialCount);
-    useEffect(() => {
-        document.title = `You clicked ${count} times`;
-    });
-    return (
-        <div>
-            <p>You clicked {count} times</p>
-            <button onClick={() => setCount(count+1)}>
-                Click me
-            </button>
-            <button onClick={() => setCount(currentCount => currentCount - 1)}>
-                -
-            </button>
-            <button onClick={() => setCount(initialCount)}>
-                Reset
-            </button>
-        </div>
     )
 }
 
