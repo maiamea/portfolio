@@ -29,10 +29,12 @@ const lists = [
 ];
 
 const SiteListsComponent = () => (
-    <ul>
+    <ul className="columns">
         {lists.map((list) => (
-            <li key={list.id}>
+            <li className="column" key={list.id}>
+                <div className="box">
                 <a href={list.url} target="_blank">{list.name}</a>
+                </div>
             </li>
         ))}
     </ul>

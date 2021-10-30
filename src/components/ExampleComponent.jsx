@@ -8,14 +8,14 @@ function ExampleComponent({initialCount}) {
     });
     return (
         <div>
-            <p>You clicked {count} times</p>
-            <button onClick={() => setCount(count+1)}>
+            <p className="box">You clicked {count} times</p>
+            <button className="button is-primary" onClick={() => setCount(count+1)}>
                 Click me
             </button>
-            <button onClick={() => setCount(currentCount => currentCount - 1)}>
+            <button className="button is-info" onClick={() => setCount(currentCount => currentCount - 1)}>
                 -
             </button>
-            <button onClick={() => setCount(initialCount)}>
+            <button  className="button is-danger is-outlined" onClick={() => setCount(initialCount)}>
                 Reset
             </button>
         </div>
