@@ -3,6 +3,7 @@ import 'bulma/css/bulma.css';
 import ExampleComponent from '../components/ExampleComponent';
 import SiteListsComponent from '../components/SiteListsComponent';
 import { Timeline } from 'react-twitter-widgets';
+import FooterComponent from '../components/FooterComponent';
 
 const HelloPage = () => {
   return (
@@ -35,6 +36,7 @@ const HelloPage = () => {
             />
           </div>
         </div>
+        <FooterComponent />
       </main>
     </section>
   )
