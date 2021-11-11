@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {Li, DateStyle, ListTitle} from './ListStyleComponent';
 
 const articleLists = [
   {
@@ -28,25 +28,17 @@ const articleLists = [
   },
 ];
 
-// px-2 mt-4 leading-tight border-l-4 border-gray-200 group dark:border-gray-400 hover:border-green-500
-const listStyle = {
-  borderLeft: "4px solid red",
-  "&:hover":{
-    borderLeft: "4px solid green"
-  },
-  marginTop: "4px"
-}
 const NoteArticlesComponent = () => (
   <>
     {articleLists.map((list) => (
       <ul>
-        <li style={listStyle} key={list.id}>
+        <Li key={list.id}>
           <a href={list.url}>
-            <span className="text-xs text-gray-400">{list.date}</span>
+            <DateStyle>{list.date}</DateStyle>
             <br />
-            {list.title}
+            <ListTitle>{list.title}</ListTitle>
           </a>
-        </li>
+        </Li>
       </ul>
     ))}
   </>

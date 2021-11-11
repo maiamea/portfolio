@@ -5,6 +5,7 @@ import SiteListsComponent from '../components/SiteListsComponent';
 import { Timeline } from 'react-twitter-widgets';
 import FooterComponent from '../components/FooterComponent';
 import NotePage from './note';
+import { Link } from "gatsby";
 
 const HelloPage = () => {
   return (
@@ -20,6 +21,7 @@ const HelloPage = () => {
             </div>
             {/* ExampleComponent({ initialCount: 100}) */}
             <NotePage />
+            <Link to="/note">and more...</Link>
           </div>
           <div className="column is-one-third">
             <Timeline
