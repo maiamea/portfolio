@@ -4,6 +4,7 @@ import ExampleComponent from '../components/ExampleComponent';
 import SiteListsComponent from '../components/SiteListsComponent';
 import { Timeline } from 'react-twitter-widgets';
 import FooterComponent from '../components/FooterComponent';
+import NotePage from './note';
 
 const HelloPage = () => {
   return (
@@ -14,15 +15,11 @@ const HelloPage = () => {
         <div className="columns">
           <div className="column">
             <div className="content">
-              <h1 className="title is-1">Hello, World!!!</h1>
-              <p >サブタイトル</p>
-              <p style={
-                { color: "red" }
-              }>こんにちは</p>
               <h2>はじめてのGatsby</h2>
               <ExampleComponent initialCount={50}></ExampleComponent>
             </div>
             {/* ExampleComponent({ initialCount: 100}) */}
+            <NotePage />
           </div>
           <div className="column is-one-third">
             <Timeline
