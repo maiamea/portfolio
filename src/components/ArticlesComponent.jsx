@@ -1,5 +1,5 @@
 import React from 'react';
-import { Li, DateStyle, ListTitle } from './ListStyleComponent';
+import { Li, DateStyle, ListTitle, LinkStyle } from './ListStyleComponent';
 import { Link } from "gatsby";
 
 const ArticlesComponent = ({title, size, articleLists, linkUrl}) => (
@@ -17,7 +17,7 @@ const ArticlesComponent = ({title, size, articleLists, linkUrl}) => (
       </ul>
     ))}
     {
-      linkUrl ? <Link to={linkUrl}>and more...</Link> : null
+      linkUrl ? <LinkStyle><Link to={linkUrl}>and more...</Link></LinkStyle> : null
     }
   </>
 );
