@@ -4,8 +4,10 @@ import ExampleComponent from '../components/ExampleComponent';
 import SiteListsComponent from '../components/SiteListsComponent';
 import { Timeline } from 'react-twitter-widgets';
 import FooterComponent from '../components/FooterComponent';
-import NotePage from './note';
-import { Link } from "gatsby";
+import ArticlesComponent from '../components/ArticlesComponent';
+import noteArticleLists from '../data/note.json';
+// 文字列の日付をDate型に変換してsortに使用
+const noteDescArticleLists = noteArticleLists.sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
 
 const HelloPage = () => {
   return (
@@ -20,8 +22,7 @@ const HelloPage = () => {
               <ExampleComponent initialCount={50}></ExampleComponent>
             </div>
             {/* ExampleComponent({ initialCount: 100}) */}
-            <NotePage />
-            <Link to="/note">and more...</Link>
+            <ArticlesComponent size={3} title="Note" articleLists={noteDescArticleLists} linkUrl={"/note"}/>
           </div>
           <div className="column is-one-third">
             <Timeline
