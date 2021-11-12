@@ -7,7 +7,7 @@ const NotePage = () => {
   return (
     <section className="section">
       <main className="container">
-      <ArticlesComponent size={100} title="Note" articleLists={noteDescArticleLists}/>
+      <ArticlesComponent size={100} title="note" articleLists={noteDescArticleLists}/>
       </main>
     </section>
   )

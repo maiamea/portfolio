@@ -22,7 +22,7 @@ const HelloPage = () => {
               <ExampleComponent initialCount={50}></ExampleComponent>
             </div>
             {/* ExampleComponent({ initialCount: 100}) */}
-            <ArticlesComponent size={3} title="Note" articleLists={noteDescArticleLists} linkUrl={"/note"}/>
+            <ArticlesComponent size={3} title="note" articleLists={noteDescArticleLists} linkUrl={"/note"}/>
           </div>
           <div className="column is-one-third">
             <Timeline
