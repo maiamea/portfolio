@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# .env を読み込む
+eval "$(cat .env <(echo) <(declare -x))"
+
+# Qiita APIから id, date, title, url を抽出
+curl -sH "Authorization: Bearer $QIITA_ACCESS_TOKEN" "https://qiita.com/api/v2/authenticated_user/items?page=1&per_page=5" | jq  '[.[] | {id, date: .created_at, title, url}]'
