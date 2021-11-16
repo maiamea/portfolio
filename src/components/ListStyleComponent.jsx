@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+export const H1 = styled.h1`
+  border-bottom: solid lightgray;
+`;
+
 export const Li = styled.li`
   border-left: 4px solid lightgray;
   margin-top: 12px;

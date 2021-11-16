@@ -1,10 +1,10 @@
 import React from 'react';
-import { Li, DateStyle, ListTitle, LinkStyle } from './ListStyleComponent';
+import { H1, Li, DateStyle, ListTitle, LinkStyle } from './ListStyleComponent';
 import { Link } from "gatsby";
 
 const ArticlesComponent = ({title, size, articleLists, linkUrl}) => (
   <>
-    <h1 className="title is-1">{title}</h1>
+    <H1 className="title is-1">{title}</H1>
     {articleLists.slice(0, size).map((list) => (
       <ul>
         <Li key={list.id}>
