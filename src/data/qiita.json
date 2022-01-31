@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "title": "Could not find nokogiri-1.10.7 in any of the sources (Bundler::GemNotFound) が出た時の対処法",
+    "date": "2020/02/15",
+    "url": "https://qiita.com/maiamea/items/1e1a8942485363d73b98"
+  },
+  {
+    "id": "2",
+    "title": "「The name 'Todo' is either already used in your application or reserved by Ruby on Rails. Please choose an alternative and run this generator again.」エラー対処法",
+    "date": "2020/12/17",
+    "url": "https://qiita.com/maiamea/items/6046184f9e6cbde623db"
+  },
+  {
+    "id": "3",
+    "title": "jsxでの条件分岐の書き方",
+    "date": "2021/11/12",
+    "url": "https://qiita.com/maiamea/items/23f4fc17efbd1ca8d6c8"
+  },
+  {
+    "id": "4",
+    "date": "2021/11/15",
+    "title": "Qiita API アクセストークン発行方法",
+    "url": "https://qiita.com/maiamea/items/680cca06f7825595cba0"
+  },
+  {
+    "id": "5",
+    "date": "2021/12/03",
+    "title": "JSONについて勘違いしていたこと",
+    "url": "https://qiita.com/maiamea/items/7a0fab584ccddb13963c"
+  }
+]
