@@ -6,12 +6,14 @@ const qiitaDescArticleLists = qiitaArticleLists.sort((a, b) => Date.parse(b.date
 
 const QiitaPage = () => {
   return (
-    <section className="section">
+    <>
       <NavbarComponent />
-      <main className="container">
-        <ArticlesComponent size={100} title="Qiita" articleLists={qiitaDescArticleLists} />
-      </main>
-    </section>
+      <section className="section">
+        <main className="container">
+          <ArticlesComponent size={100} title="Qiita" articleLists={qiitaDescArticleLists} />
+        </main>
+      </section>
+    </>
   )
 }
 

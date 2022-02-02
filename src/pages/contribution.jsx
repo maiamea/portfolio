@@ -6,12 +6,14 @@ const contributionDescArticleLists = contributionArticleLists.sort((a, b) => Dat
 
 const ContributionPage = () => {
   return (
-    <section className="section">
+    <>
       <NavbarComponent />
-      <main className="container">
-      <ArticlesComponent size={100} title="寄稿" articleLists={contributionDescArticleLists}/>
-      </main>
-    </section>
+      <section className="section">
+        <main className="container">
+          <ArticlesComponent size={100} title="寄稿" articleLists={contributionDescArticleLists} />
+        </main>
+      </section>
+    </>
   )
 }
 

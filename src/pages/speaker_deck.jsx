@@ -6,12 +6,14 @@ const speakerDeckDescArticleLists = speakerDeckArticleLists.sort((a, b) => Date.
 
 const SpeakerDeckPage = () => {
   return (
-    <section className="section">
+    <>
       <NavbarComponent />
-      <main className="container">
-      <ArticlesComponent size={100} title="登壇資料" articleLists={speakerDeckDescArticleLists}/>
-      </main>
-    </section>
+      <section className="section">
+        <main className="container">
+          <ArticlesComponent size={100} title="登壇資料" articleLists={speakerDeckDescArticleLists} />
+        </main>
+      </section>
+    </>
   )
 }
 
