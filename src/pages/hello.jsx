@@ -17,33 +17,35 @@ const speakerDeckDescArticleLists = speakerDeckArticleLists.sort((a, b) => Date.
 
 const HelloPage = () => {
   return (
-    <section className="section">
+    <>
       <NavbarComponent />
-      <main className="container">
-        <h1 className="title is-1">めあ's Portfolio</h1>
-        <SiteListsComponent />
-        <div className="columns">
-          <div className="column">
-            <ArticlesComponent size={3} title="note" articleLists={noteDescArticleLists} linkUrl={"/note"} />
-            <ArticlesComponent size={3} title="Qiita" articleLists={qiitaDescArticleLists} linkUrl={"/qiita"} />
-            <ArticlesComponent size={3} title="寄稿" articleLists={contributionDescArticleLists} linkUrl={"/contribution"} />
-            <ArticlesComponent size={3} title="登壇資料" articleLists={speakerDeckDescArticleLists} linkUrl={"/speaker_deck"} />
+      <section className="section">
+        <main className="container">
+          <h1 className="title is-1">めあ's Portfolio</h1>
+          <SiteListsComponent />
+          <div className="columns">
+            <div className="column">
+              <ArticlesComponent size={3} title="note" articleLists={noteDescArticleLists} linkUrl={"/note"} />
+              <ArticlesComponent size={3} title="Qiita" articleLists={qiitaDescArticleLists} linkUrl={"/qiita"} />
+              <ArticlesComponent size={3} title="寄稿" articleLists={contributionDescArticleLists} linkUrl={"/contribution"} />
+              <ArticlesComponent size={3} title="登壇資料" articleLists={speakerDeckDescArticleLists} linkUrl={"/speaker_deck"} />
+            </div>
+            <div className="column is-one-third">
+              <Timeline
+                dataSource={{
+                  sourceType: 'profile',
+                  screenName: 'maiamea'
+                }}
+                options={{
+                  height: '800'
+                }}
+              />
+            </div>
           </div>
-          <div className="column is-one-third">
-            <Timeline
-              dataSource={{
-                sourceType: 'profile',
-                screenName: 'maiamea'
-              }}
-              options={{
-                height: '800'
-              }}
-            />
-          </div>
-        </div>
-        <FooterComponent />
-      </main>
-    </section>
+          <FooterComponent />
+        </main>
+      </section>
+    </>
   )
 }
 

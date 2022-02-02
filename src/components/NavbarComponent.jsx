@@ -1,11 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const NavbarComponent = () => (
+const NavbarComponent = () => {
+  const [isBurgerMenuActive, setIsActive] = useState(false);
+  function toggleMenu() {
+    const newValue = !isBurgerMenuActive;
+    setIsActive(newValue);
+  }
+
+  const isActiveClass = isBurgerMenuActive ? "is-active" : "";
+  return (
   <>
-    <nav class="navbar is-transparent is-info">
-      <div id="navbarExampleTransparentExample" class="navbar-menu">
+    <nav class="navbar is-transparent is-info" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a onClick={toggleMenu} role="button" class={`navbar-burger buger ${isActiveClass}`} aria-label="menu" aria-expanded="false" data-target="navbarExampleTransparentExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbarExampleTransparentExample" class={`navbar-menu ${isActiveClass}`}>
         <div class="navbar-end">
-          <a class="navbar-item" href="/hello">トップ</a>
+          <a class="navbar-item" href="/hello">トップ {isBurgerMenuActive}</a>
           <a class="navbar-item" href="">プロフィール</a>
           <a class="navbar-item" href="">スキル</a>
           <a class="navbar-item" href="">連絡先</a>
@@ -13,6 +28,6 @@ const NavbarComponent = () => (
       </div>
     </nav>
   </>
-);
+)};
 
 export default NavbarComponent
