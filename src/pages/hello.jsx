@@ -1,6 +1,5 @@
 import React from 'react';
 import 'bulma/css/bulma.css';
-import ExampleComponent from '../components/ExampleComponent';
 import SiteListsComponent from '../components/SiteListsComponent';
 import { Timeline } from 'react-twitter-widgets';
 import FooterComponent from '../components/FooterComponent';
@@ -25,11 +24,6 @@ const HelloPage = () => {
         <SiteListsComponent />
         <div className="columns">
           <div className="column">
-            {/* <div className="content">
-              <h2>はじめてのGatsby</h2>
-              <ExampleComponent initialCount={50}></ExampleComponent>
-            </div> */}
-            {/* ExampleComponent({ initialCount: 100}) */}
             <ArticlesComponent size={3} title="note" articleLists={noteDescArticleLists} linkUrl={"/note"} />
             <ArticlesComponent size={3} title="Qiita" articleLists={qiitaDescArticleLists} linkUrl={"/qiita"} />
             <ArticlesComponent size={3} title="寄稿" articleLists={contributionDescArticleLists} linkUrl={"/contribution"} />
