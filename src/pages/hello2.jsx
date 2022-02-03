@@ -38,7 +38,8 @@ const HelloPage = () => {
                   screenName: 'maiamea'
                 }}
                 options={{
-                  height: '800'
+                  height: '800',
+                  width: '500'
                 }}
               />
             </div>
