@@ -22,8 +22,6 @@ const NavbarComponent = () => {
         <div class="navbar-end">
           <a class="navbar-item" href="/hello">トップ {isBurgerMenuActive}</a>
           <a class="navbar-item" href="">プロフィール</a>
-          <a class="navbar-item" href="">スキル</a>
-          <a class="navbar-item" href="">連絡先</a>
         </div>
       </div>
     </nav>
