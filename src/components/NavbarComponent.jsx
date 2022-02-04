@@ -20,8 +20,8 @@ const NavbarComponent = () => {
       </div>
       <div id="navbarExampleTransparentExample" class={`navbar-menu ${isActiveClass}`}>
         <div class="navbar-end">
-          <a class="navbar-item" href="/hello">トップ {isBurgerMenuActive}</a>
-          <a class="navbar-item" href="">プロフィール</a>
+          <a class="navbar-item" href="/">トップ {isBurgerMenuActive}</a>
+          <a class="navbar-item" href="/#profile">プロフィール</a>
         </div>
       </div>
     </nav>

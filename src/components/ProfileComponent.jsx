@@ -4,7 +4,7 @@ import TwitterMaiameaIcon from '../images/twitter_maiamea.png';
 const ProfileComponent = () => (
   <>
     <section className="hero is-info is-halfheight">
-      <div className="hero-body">
+      <div id="profile" className="hero-body">
         <div className="container">
           <h1 className="title is-1 has-text-centered mb-6">プロフィール</h1>
           <div className="columns is-flex-direction-column is-align-items-center">

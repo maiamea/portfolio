@@ -16,7 +16,7 @@ const qiitaDescArticleLists = qiitaArticleLists.sort((a, b) => Date.parse(b.date
 const contributionDescArticleLists = contributionArticleLists.sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
 const speakerDeckDescArticleLists = speakerDeckArticleLists.sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
 
-const HelloPage = () => {
+const IndexPage = () => {
   return (
     <>
       <NavbarComponent />
@@ -52,4 +52,4 @@ const HelloPage = () => {
   )
 }
 
-export default HelloPage
+export default IndexPage
