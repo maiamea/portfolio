@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: `/portfolio`,
+  // pathPrefix: `/portfolio`,
   siteMetadata: {
     siteUrl: "https://maiamea.github.io/portfolio/",
     title: "maiamea's portfolio",
