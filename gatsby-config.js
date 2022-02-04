@@ -1,7 +1,6 @@
 module.exports = {
-  // pathPrefix: `/portfolio`,
   siteMetadata: {
-    siteUrl: "https://maiamea.github.io/portfolio/",
+    siteUrl: "https://maiamea.netlify.app/",
     title: "maiamea's portfolio",
   },
   plugins: [
