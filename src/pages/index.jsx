@@ -31,7 +31,7 @@ const IndexPage = () => {
               <ArticlesComponent size={3} title="寄稿" articleLists={contributionDescArticleLists} linkUrl={"/contribution"} />
               <ArticlesComponent size={3} title="登壇資料" articleLists={speakerDeckDescArticleLists} linkUrl={"/speaker_deck"} />
             </div>
-            <div className="column is-one-third">
+            <div className="column is-one-third is-hidden-mobile">
               <Timeline
                 dataSource={{
                   sourceType: 'profile',
@@ -47,6 +47,18 @@ const IndexPage = () => {
         </main>
       </section>
       <ProfileComponent />
+      <section className="section is-hidden-tablet">
+        <Timeline
+          dataSource={{
+            sourceType: 'profile',
+            screenName: 'maiamea'
+          }}
+          options={{
+            height: '800',
+            width: '500'
+          }}
+          />
+      </section>
       <FooterComponent />
     </>
   )
