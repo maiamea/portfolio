@@ -1,7 +1,6 @@
 import React from 'react';
 import 'bulma/css/bulma.css';
 import SiteListsComponent from '../components/SiteListsComponent';
-import { Timeline } from 'react-twitter-widgets';
 import FooterComponent from '../components/FooterComponent';
 import ArticlesComponent from '../components/ArticlesComponent';
 import noteArticleLists from '../data/note.json';
@@ -10,6 +9,7 @@ import contributionArticleLists from '../data/contribution.json';
 import speakerDeckArticleLists from '../data/speaker_deck.json';
 import NavbarComponent from '../components/NavbarComponent';
 import ProfileComponent from '../components/ProfileComponent';
+import TwitterTimelineComponent from '../components/TwitterTimelineComponent';
 // 文字列の日付をDate型に変換してsortに使用
 const noteDescArticleLists = noteArticleLists.sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
 const qiitaDescArticleLists = qiitaArticleLists.sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
@@ -32,32 +32,14 @@ const IndexPage = () => {
               <ArticlesComponent size={3} title="登壇資料" articleLists={speakerDeckDescArticleLists} linkUrl={"/speaker_deck"} />
             </div>
             <div className="column is-one-third is-hidden-mobile">
-              <Timeline
-                dataSource={{
-                  sourceType: 'profile',
-                  screenName: 'maiamea'
-                }}
-                options={{
-                  height: '800',
-                  width: '500'
-                }}
-              />
+              <TwitterTimelineComponent />
             </div>
           </div>
         </main>
       </section>
       <ProfileComponent />
       <section className="section is-hidden-tablet">
-        <Timeline
-          dataSource={{
-            sourceType: 'profile',
-            screenName: 'maiamea'
-          }}
-          options={{
-            height: '800',
-            width: '500'
-          }}
-          />
+        <TwitterTimelineComponent />
       </section>
       <FooterComponent />
     </>
