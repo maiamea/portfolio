@@ -8,23 +8,53 @@
   {
     "id": "2",
     "title": "「The name 'Todo' is either already used in your application or reserved by Ruby on Rails. Please choose an alternative and run this generator again.」エラー対処法",
-    "date": "2020/12/17",
+    "date": "2020/02/17",
     "url": "https://qiita.com/maiamea/items/6046184f9e6cbde623db"
   },
   {
     "id": "3",
+    "date": "2020/08/14",
+    "title": "Slack bot を作って Heroku にデプロイしてみた",
+    "url": "https://qiita.com/maiamea/items/70ebec2f6075a5a726c1"
+  },
+  {
+    "id": "4",
+    "date": "2020/08/17",
+    "title": "Slack bot に画像を表示してみた",
+    "url": "https://qiita.com/maiamea/items/74fe068828b3b9a81e93"
+  },
+  {
+    "id": "5",
+    "date": "2021/10/12",
+    "title": "git で push 前の古い(最新じゃない)コミットメッセージを変更する方法",
+    "url": "https://qiita.com/maiamea/items/6eac15daecf3db2b3c47"
+  },
+  {
+    "id": "6",
+    "date": "2021/10/26",
+    "title": "Gatsby.jsで「ModuleBuildError: Module build failed : SyntaxError: Only one default export allowed per module.」というエラーが出たときの対処法",
+    "url": "https://qiita.com/maiamea/items/58bdd1d9bb7fba9bb0b5"
+  },
+  {
+    "id": "7",
+    "date": "2021/10/30",
+    "title": "ReactでTwitterタイムラインを埋め込む方法",
+    "url": "https://qiita.com/maiamea/items/9513dc4e4b41d722402e"
+  },
+  {
+    "id": "8",
     "title": "jsxでの条件分岐の書き方",
     "date": "2021/11/12",
     "url": "https://qiita.com/maiamea/items/23f4fc17efbd1ca8d6c8"
   },
   {
-    "id": "4",
+    "id": "9",
     "date": "2021/11/15",
     "title": "Qiita API アクセストークン発行方法",
     "url": "https://qiita.com/maiamea/items/680cca06f7825595cba0"
   },
   {
-    "id": "5",
+    "id": "10",
     "date": "2021/12/03",
     "title": "JSONについて勘違いしていたこと",
     "url": "https://qiita.com/maiamea/items/7a0fab584ccddb13963c"
